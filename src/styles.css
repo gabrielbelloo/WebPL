@@ -1,3 +1,4 @@
+/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -11,20 +12,42 @@ body {
     flex-direction: column;
     min-height: 100vh;
     transition: background-color 0.3s ease;
-    }
+}
 
 .hero {
     background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 33%, rgba(252,252,252,1) 46%, rgba(237,237,237,1) 73%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 39%, rgba(252,252,252,1) 53%, rgba(237,237,237,1) 70%);
     width: 100%;
-    height: 80vh;
+    height: 50vh;
+    padding: 20%;
+    padding-top: 15%;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     text-align: center;
 }
 
-.container{
+.container-proposito h1 {
+    font-size: 2.7em;
+}
+
+.container-proposito h2 {
+    font-size: 2.1em;
+}
+
+.container-proposito h3 {
+    font-size: 1.4em;
+}
+
+.container-proposito h4 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.container {
     margin-left: 300px;
     margin-top: 54px;
     display: flex;
@@ -39,8 +62,6 @@ body {
 
 .container h2 {
     font-size: 2.1em;
-    font-weight: normal;
-    margin-bottom: 10px;
 }
 
 .container h3 {
@@ -59,7 +80,7 @@ body {
 
 .sidebar {
     position: fixed;
-    width: 280px;
+    width: 17em;
     background: #ffffff;
     padding: 30px 20px;
     margin-top: 84px;
@@ -120,6 +141,11 @@ hr {
     padding-bottom: 14em;
 }
 
+.content h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 h4 {
     margin-top: 30px;
     color: #333;
@@ -128,8 +154,6 @@ h4 {
 }
 
 h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
     color: #333;
     text-align: center;
 }
@@ -142,7 +166,6 @@ table {
     overflow: hidden;
     box-shadow: 0px 10px 18px #e1e3e1;
 }
-
 
 th, td {
     padding: 14px 20px;
@@ -158,7 +181,7 @@ th {
     position: relative;
 }
 
-tr {            
+tr {
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,0.87) 0%, rgba(38,38,38,0.9) 50%, rgba(0,0,0,0.87) 100%);
 }
@@ -176,11 +199,10 @@ tr:hover td {
 }
 
 .sort-icon {
-    margin-left: 10px;
     font-size: 16px;
     color: #fff;
     position: absolute;
-    right: 23px;
+    right: 18px;
 }
 
 .admin-button {
@@ -211,7 +233,7 @@ tr:hover td {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.modal-content input , .modal-content select{
+.modal-content input, .modal-content select {
     background-color: #ffffff;
     width: 100%;
     padding: 10px;
@@ -278,7 +300,7 @@ header {
     margin-left: 52px;
     margin-right: 20px;
     flex: 1 1 200px;
-    text-align:left;
+    text-align: left;
     font-size: 1.0em;
     align-items: center;
 }
@@ -325,16 +347,16 @@ footer {
     flex: 1 1 200px;
     text-align: left;
     font-size: 1.1em;
-  }
+}
 
-  .footer-subsection {
+.footer-subsection {
     margin-top: 20px;
     margin-left: 52px;
     margin-right: 20px;
     flex: 1 1 200px;
-    text-align:left;
+    text-align: left;
     font-size: 0.8em;
-  }
+}
 
 footer a {
     color: #f7f7f7;
@@ -382,7 +404,7 @@ footer a:hover {
     margin: auto;
 }
 
-.fa-envelope{
+.fa-envelope {
     font-size: 1.3em;
     float: right;
     cursor: pointer;
@@ -400,7 +422,7 @@ footer a:hover {
     margin-left: 10px;
 }
 
-.fa-envelope:hover, .fa-whatsapp:hover, .fa-trash:hover, .fa-pen-to-square:hover{
+.fa-envelope:hover, .fa-whatsapp:hover, .fa-trash:hover, .fa-pen-to-square:hover {
     color: #333;
 }
 
@@ -418,7 +440,6 @@ footer img {
     height: 28px;
     margin-right: 10px;
     cursor: pointer;
-
 }
 
 .logo {
@@ -439,10 +460,63 @@ footer img {
     display: none;
 }
 
-
-
 .abc {
     background-color: #ffffff;
     width: 100%;
     height: 100vh;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+    .container {
+        margin-left: 250px;
+    }
+
+    .sidebar {
+        width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        margin-left: 200px;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .content {
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-subsection, .sidebar{
+        display: none;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .container {
+        margin-top: 10%;
+    }
+    .footer-subsection{
+        text-align: center;
+    }
 }
