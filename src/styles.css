@@ -98,7 +98,7 @@ body {
     color: #333;
 }
 
-.sidebar input, .sidebar select {
+.sidebar input, .sidebar select, .footer select {
     width: 100%;
     padding: 18px 10px;
     border-radius: 6px;
@@ -366,6 +366,7 @@ footer a {
 }
 
 footer p {
+    width: 92%;
     color: #f7f7f7;
     text-decoration: none;
     margin: 0px 10px;
@@ -373,7 +374,7 @@ footer p {
     text-align: right;
     transition: color 0.3s;
     margin-bottom: 20px;
-    margin-right: 40px;
+    margin-right: 0;
 }
 
 footer a:hover {
@@ -400,8 +401,11 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
     margin: auto;
+}
+
+.select-container{
+    display: none;
 }
 
 .fa-envelope {
@@ -466,7 +470,6 @@ footer img {
     height: 100vh;
 }
 
-/* Media Queries para responsividade */
 @media (max-width: 1200px) {
     .container {
         margin-left: 250px;
@@ -510,6 +513,9 @@ footer img {
     body {
         box-sizing: border-box;
     }
+    header{
+        position: relative;
+    }
     .header-subsection, .sidebar{
         display: none;
     }
@@ -527,6 +533,7 @@ footer img {
         display: none;
     }
     footer {
+        background-color: #f3f3f3;
         bottom: 0;
         padding: 0;
         width: 100%;
@@ -536,36 +543,57 @@ footer img {
         transition: bottom 0.5s ease;
     }
     .footer hr{
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 85%;
+        border: 1px solid #dbdbdc;
+        transform: scaleY(0.5);
+        margin: 0px;
+        width: 97%;
     }
     .footer-container{
         margin: 0;
+        padding: 1vh;
         display: flex;
         flex-direction: column;
         text-align: center;
         box-sizing: border-box;
-
+        align-items: center;
     }
     .footer-section{
-        margin: 0;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        display: none;
     }
     .footer-subsection{
         text-align: center;
-        justify-content: center;
-        align-items: center;
+        flex: none;
         margin: 0;
-
     }
     .footer-subsection p, .footer-subsection a{
+        color: #444445;
         text-align: center;
         justify-content: center;
         align-items: center;
         font-size: 0.8em;
         margin: 14px;
+    }
+    .footer-subsection a{
+        font-size: 1em;
+    }
+    .select-container{
+        display: contents;
+        margin-bottom: 25px;
+    }
+    .footer select{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 0;
+        color: #444445;
+        margin: 0px;
+        background-color: transparent;
+        width: 97%;
+        height: auto;
+    }
+
+    .footer option {
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 0.8em;
     }
 }
