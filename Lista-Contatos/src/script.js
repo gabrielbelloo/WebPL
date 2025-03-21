@@ -244,6 +244,22 @@ function closeAddContactModal() {
     document.getElementById('addContactModal').style.display = 'none';
 }
 
+function openHeaderMenu() {
+    document.getElementById('menuModal').style.display = 'flex';
+}
+
+function closeHeaderMenu() {
+    document.getElementById('menuModal').style.display = 'none';
+}
+
+function openHeaderFilter() {
+    document.getElementById('filterModal').style.display = 'flex';
+}
+
+function closeHeaderFilter() {
+    document.getElementById('filterModal').style.display = 'none';
+}
+
 const adminLogin = "admin";
 const adminPassword = "admin123";
 
@@ -262,7 +278,3 @@ function validateLogin() {
 function formatPhoneNumber(phone) {
     return phone.replace(/\D/g, '');
 }          
-
-function openOptions() {
-    
-}

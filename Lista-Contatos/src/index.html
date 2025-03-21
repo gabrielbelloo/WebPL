@@ -22,7 +22,62 @@
                 <a href="#metodologia">Metodologia</a>
                 <a href="#clientes">Clientes</a>
             </div>
+
+            <div class="header-buttons hidden">
+                <button class="menu-btn hidden" onclick="openHeaderMenu()"><i class="fas fa-equals"></i></button>
+                <button class="menu-btn hidden" onclick="openHeaderFilter()"><i class="fas fa-filter"></i></button>
+            </div>
     
+            <div id="menuModal">
+                <div class="modal-content">
+                    <button class="menu-btn" onclick="closeHeaderMenu()"><i class="fa-solid fa-xmark"></i></button>
+                    <a href="#inicio">Início</a>
+                    <a href="#quem-somos">Quem Somos</a>
+                    <a href="#metodologia">Metodologia</a>
+                    <a href="#clientes">Clientes</a>
+                </div>
+            </div>
+
+
+            <div id="filterMenu" class="modal">
+                <div class="modal-content hidden">
+            <h3>Filtros</h3>
+            <input type="text" id="search-name" placeholder="Procurar por nome" onkeyup="filterTable()">
+            <hr />
+            <select id="search-sector" onchange="filterTable()">
+                <option value="">Setor</option>
+                <option value="Almoxarifado">Almoxarifado</option>
+                <option value="Boticário">Boticário</option>
+                <option value="Comercial">Comercial</option>
+                <option value="Compras">Compras</option>
+                <option value="Corte">Corte</option>
+                <option value="Custo">Custo</option>
+                <option value="Desenvolvimento">Desenvolvimento</option>
+                <option value="Departamento Pessoal">Departamento Pessoal</option>
+                <option value="Ecommerce">Ecommerce</option>
+                <option value="Estilo">Estilo</option>
+                <option value="Estoque">Estoque</option>
+                <option value="Expedição">Expedição</option>
+                <option value="Ficha">Ficha</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="Fiscal">Fiscal</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Modelagem">Modelagem</option>
+                <option value="PPCP">PPCP</option>
+                <option value="Qualidade">Qualidade</option>
+                <option value="TI">TI</option>
+                <option value="Recepção">Recepção</option>
+                <option value="Transporte">Transporte</option>
+            </select>
+            <hr />
+            <input type="text" id="search-ramal" placeholder="Procurar por ramal" onkeyup="filterTable()">
+            <hr />
+            <input type="text" id="search-email" placeholder="Procurar por email" onkeyup="filterTable()">
+            <hr />
+            <input type="text" id="search-phone" placeholder="Procurar por telefone" onkeyup="filterTable()">
+          </div>
+            </div>
+
     </header>
 
   <div class="sidebar">
@@ -164,13 +219,12 @@
     
         <div class="select-container">
         <hr />
-        <div class="footer-select">
-            <ul>
-            <li value="">AJUDA</li>
+        <select id="footer-select">
+            <option value="">AJUDA</option>
             <option value="DÚVIDAS GERAIS">DÚVIDAS GERAIS</option>
             <option value="ABRA SEU CHAMADO"><a></a>ABRA SEU CHAMADO</option>
             <option value="FALE CONOSCO">FALE CONOSCO</option>
-        </div>
+        </select>
         <hr />
         <select id="footer-select">
             <option value="">SOBRE NÓS</option>
