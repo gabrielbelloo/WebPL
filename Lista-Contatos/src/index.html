@@ -24,8 +24,8 @@
             </div>
 
             <div class="header-buttons hidden">
-                <button class="menu-btn hidden" onclick="openHeaderMenu()"><i class="fas fa-equals"></i></button>
-                <button class="menu-btn hidden" onclick="openHeaderFilter()"><i class="fas fa-filter"></i></button>
+                <button class="menu-btn" onclick="openHeaderMenu()"><i class="fas fa-bars"></i></button>
+                <button class="menu-btn" onclick="openHeaderFilter()"><i class="fas fa-filter"></i></button>
             </div>
     
             <div id="menuModal" class="modal">
@@ -39,8 +39,8 @@
             </div>
 
 
-            <div id="filterMenu" class="modal">
-                <div class="modal-content hidden">
+            <div id="filterModal" class="modal">
+                <div class="modal-content">
             <h3>Filtros</h3>
             <input type="text" id="search-name" placeholder="Procurar por nome" onkeyup="filterTable()">
             <hr />
@@ -75,6 +75,7 @@
             <input type="text" id="search-email" placeholder="Procurar por email" onkeyup="filterTable()">
             <hr />
             <input type="text" id="search-phone" placeholder="Procurar por telefone" onkeyup="filterTable()">
+            <button onclick="closeHeaderFilter()">Buscar</button>
           </div>
             </div>
 

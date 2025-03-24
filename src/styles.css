@@ -514,15 +514,17 @@ footer img {
         box-sizing: border-box;
     }
     header{
+        box-sizing: border-box;
         position: relative;
         padding: 8px;
         justify-content: left;
-        display: grid;
-        grid-template-columns: 200px 200px;
+        justify-content: space-between;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
     .header-buttons{
         display: flex;
         flex-direction: row-reverse;
+        width: fit-content;
     }
     .menu-btn{
         display: flex;
@@ -561,6 +563,32 @@ footer img {
         font-weight: 600;
         margin-bottom: 5px;
     }
+    #filterModal .modal-content{
+        color: #111111;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    #filterModal h3{
+        font-size: 1.6em;
+        margin-bottom: 14px;
+    }
+    #filterModal button{
+        font-size: 0.9em;
+        margin-top: 14px;
+    }
+    #filterModal input, #filterModal select {
+        width: 100%;
+        padding: 18px 10px;
+        margin: 2px;
+        border-radius: 6px;
+        border: 0px;
+        font-size: 0.9em;
+    }
+    
+    #filterModal input:focus, #filterModal select:focus {
+        background-color: #fafafa;
+        outline: none;
+    }
     .modal-content {
         background-color: #f3f3f3;
         padding: 20px;
@@ -593,7 +621,7 @@ footer img {
         transform: scale(0.6);
     }
     .container {
-        margin-top: 15%;
+        margin-top: 10%;
         margin-bottom: 3%;
         margin-left: 3%;
         margin-right: 3%;
