@@ -525,6 +525,7 @@ footer img {
         display: flex;
         flex-direction: row-reverse;
         width: fit-content;
+        margin-right: 0.8em;
     }
     .menu-btn{
         display: flex;

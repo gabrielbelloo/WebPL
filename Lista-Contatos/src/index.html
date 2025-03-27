@@ -42,9 +42,9 @@
             <div id="filterModal" class="modal">
                 <div class="modal-content">
             <h3>Filtros</h3>
-            <input type="text" id="search-name" placeholder="Procurar por nome" onkeyup="filterTable()">
+            <input type="text" id="search-nameMobile" placeholder="Procurar por nome" onkeyup="mobileFilterTable()">
             <hr />
-            <select id="search-sector" onchange="filterTable()">
+            <select id="search-sectorMobile" onchange="filterTableMobile()">
                 <option value="">Setor</option>
                 <option value="Almoxarifado">Almoxarifado</option>
                 <option value="Boticário">Boticário</option>
@@ -70,11 +70,11 @@
                 <option value="Transporte">Transporte</option>
             </select>
             <hr />
-            <input type="text" id="search-ramal" placeholder="Procurar por ramal" onkeyup="filterTable()">
+            <input type="text" id="search-ramalMobile" placeholder="Procurar por ramal" onkeyup="filterTableMobile()">
             <hr />
-            <input type="text" id="search-email" placeholder="Procurar por email" onkeyup="filterTable()">
+            <input type="text" id="search-emailMobile" placeholder="Procurar por email" onkeyup="filterTableMobile()">
             <hr />
-            <input type="text" id="search-phone" placeholder="Procurar por telefone" onkeyup="filterTable()">
+            <input type="text" id="search-phoneMobile" placeholder="Procurar por telefone" onkeyup="filterTableMobile()">
             <button onclick="closeHeaderFilter()">Buscar</button>
           </div>
             </div>

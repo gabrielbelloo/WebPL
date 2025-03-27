@@ -24,6 +24,32 @@ function filterTable() {
     });
 }
 
+function mobileFilterTable() {
+    let nameInputMobile = document.getElementById("search-nameMobile").value.toLowerCase();
+    let sectorInputMobile = document.getElementById("search-sectorMobile").value.toLowerCase();
+    let ramalInputMobile = document.getElementById("search-ramalMobile").value.toLowerCase();
+    let emailInputMobile = document.getElementById("search-emailMobile").value.toLowerCase();
+    let phoneInputMobile = document.getElementById("search-phoneMobile").value.toLowerCase();
+    let rows = document.querySelectorAll("#table-body tr");
+    
+    rows.forEach(row => {
+        let name = row.children[0].textContent.toLowerCase();
+        let sector = row.children[1].textContent.toLowerCase();
+        let ramal = row.children[2].textContent.toLowerCase();
+        let email = row.children[3].textContent.toLowerCase();
+        let phone = row.children[4].textContent.toLowerCase();
+        
+        let matches = 
+            (name.includes(nameInputMobile) || nameInputMobile === "") &&
+            (sectorInputMobile === "" || sector.includes(sectorInputMobile)) &&
+            (ramal.includes(ramalInputMobile) || ramalInputMobile === "") &&
+            (email.includes(emailInputMobile) || emailInputMobile === "") &&
+            (phone.includes(phoneInputMobile) || phoneInputMobile === "");
+        
+        row.style.display = matches ? "" : "none";
+    });
+}
+
 function sortTable(columnIndex) {
     let table = document.querySelector("table tbody");
     let rows = Array.from(table.rows);
