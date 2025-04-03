@@ -291,7 +291,6 @@ header {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
     align-items: center;
     transition: bottom 0.5s ease;
     z-index: 100;
@@ -302,7 +301,7 @@ header {
     margin-left: 52px;
     margin-right: 20px;
     flex: 1 1 200px;
-    text-align: left;
+    justify-content: center;
     font-size: 1.0em;
     align-items: center;
 }
