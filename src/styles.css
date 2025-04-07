@@ -330,7 +330,7 @@ footer {
     padding: 10px 0px;
     padding-left: 20px;
     padding-right: 20px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: auto;
@@ -476,8 +476,6 @@ footer img {
 .main-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 7vh;
 }
 
