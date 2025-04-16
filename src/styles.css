@@ -500,6 +500,10 @@ footer img {
     border-radius: 8px;
 }
 
+.fa-building:hover, .fa-bars:hover{
+    color: #f3f3f3;
+}
+
 .main-container{
     display: flex;
     align-items: center;
@@ -567,6 +571,7 @@ footer img {
     padding-right: 10px;
     padding-bottom: 2px;
     border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .empresa-card h4{
@@ -580,10 +585,19 @@ footer img {
     border: solid 1px #ccc;
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
     padding: 1vh;
+    width: 75%;
+    height: 20%;
 }
 
-.fa-plus{
+.fa-xmark{
+    font-size: 0.8em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.fa-chevron-down{
     cursor: pointer;
 }
 
@@ -619,13 +633,19 @@ footer img {
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
-    box-shadow: 0px 10px 18px #e1e3e1;
+    box-shadow: 0px 7px 10px #e1e3e1;
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #f3f3f3;
 }
 
 .card h4{

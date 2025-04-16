@@ -4,3 +4,14 @@ function mudaMargemBanner(){
 }
 
 window.onload = mudaMargemBanner;
+
+function removeEmpresa(element) {
+    const card = element.closest('.empresa-card');
+    if (card) {
+        card.remove();
+    }
+}
+
+function openEmpresaSelect(){
+
+}
