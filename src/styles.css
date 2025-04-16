@@ -591,6 +591,10 @@ footer img {
     height: 20%;
 }
 
+.empresas-select{
+    background-color: #ffffff;
+}
+
 .fa-xmark{
     font-size: 0.8em;
     cursor: pointer;
