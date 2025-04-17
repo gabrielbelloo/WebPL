@@ -33,10 +33,25 @@
     </header>
 
     <div id="editModal" class="modal">
-        <div class="modal-content">
-            <h2>Login</h2>
-            <input type="text" id="login" placeholder="Login">
-            <input type="password" id="password" placeholder="Senha">
+        <div class="editModal-content">
+
+            <span class="close" onclick="closeEditModal()"><i class="fa-solid fa-xmark"></i></span>
+            
+            
+            <div class="editTitle">
+                <i class="fa-solid fa-user"></i>
+                <h2>MINHAS INFORMAÇÕES</h2>
+            </div>
+
+            <label>E-MAIL</label>
+            <input type="text" id="email" placeholder="E-mail" disabled>
+
+            <label>NOME COMPLETO</label>
+            <input type="text" id="nomeCompleto" placeholder="Nome Completo">
+
+            <label>TELEFONE</label>
+            <input type="text" id="telefone" placeholder="Telefone">
+
             <p id="errorMessage" class="error-message"></p>
             <button onclick="validateLogin()">Entrar</button>
         </div>

@@ -11,10 +11,10 @@ function mudaComprimentoOptions() {
 
 function editProfile() {
     var editModal = document.getElementById('editModal');
-    if (editModal.style.display === 'block') {
+    if (editModal.style.display === 'flex') {
         editModal.style.display = 'none';
     } else {
-        editModal.style.display = 'block';
+        editModal.style.display = 'flex';
     }
 }
 

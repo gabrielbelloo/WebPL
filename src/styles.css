@@ -226,6 +226,21 @@ tr:hover td {
     z-index: 1000;
 }
 
+.close{
+    position: absolute;
+
+}
+
+.modal .fa-xmark{
+    font-size: 1em;
+    color: #111111;
+    cursor: pointer;
+    width: 100%;
+
+    display: block;
+    text-align: right;
+}
+
 .modal-content {
     background-color: white;
     padding: 20px;
@@ -246,6 +261,14 @@ tr:hover td {
     box-shadow: none;
 }
 
+.fa-user{
+    color: #ffffff;
+    background-color: #302e31;
+    font-size: 0.6em;
+    padding: 1.1vh;
+    border-radius: 4px;
+}
+
 .modal-content button {
     background-color: #0f0f0f;
     color: white;
@@ -259,6 +282,54 @@ tr:hover td {
 
 .modal-content button:hover {
     background-color: #1a1a1a;
+}
+
+.editModal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70vh;
+    text-align: start;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.editModal-content label{
+    font-size:0.8em;
+    color: #aaa;
+    font-weight: 500;
+}
+
+
+.editModal-content input, .editModal-content select {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #777777;
+    box-shadow: none;
+}
+
+.editModal-content button {
+    background-color: #0f0f0f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.editModal-content button:hover {
+    background-color: #1a1a1a;
+}
+
+.editTitle{
+    display: flex;
+    gap: 1vh;
+    margin-bottom: 1vh;
 }
 
 .error-message {
