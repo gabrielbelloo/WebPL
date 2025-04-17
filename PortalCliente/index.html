@@ -29,22 +29,28 @@
     </header>
 
     <div class="banner-container">
-        <img src="https://adapcon-pro-production-microservice-file-public.s3-sa-east-1.amazonaws.com/admin/banners/banner-cabecalho-ae9c454b-186e-4fb6-bc70-2dc4f9b3ff35.png" alt="Banner" id="banner" class="banner"></div>
+        <img src="https://adapcon-pro-production-microservice-file-public.s3-sa-east-1.amazonaws.com/admin/banners/banner-cabecalho-ae9c454b-186e-4fb6-bc70-2dc4f9b3ff35.png"
+            alt="Banner" id="banner" class="banner">
+    </div>
 
     <main>
         <div class="main-container">
-            <div class="main-section">
-                <div class="main-icon"><i class="fa-solid fa-building"></i><h3>MINHAS EMPRESAS</h3></div>
+            <div class="main-section" style="padding-bottom: 3vh;">
+                <div class="main-icon"><i class="fa-solid fa-building"></i>
+                    <h3>MINHAS EMPRESAS</h3>
+                </div>
 
-                <div class="section-content">
+                <div class="section-content" style="margin-bottom: 0;">
 
-                    <div class="empresas-box">
+                    <div class="empresas-box" id="empresas-box">
                         <div class="empresas-container">
                             <div class="empresa-card">
-                                <h4>Nome da Empresa 1<i class="fa-solid fa-xmark" onclick="removeEmpresa(this)"></i></h4>
+                                <h4>Nome da Empresa 1<i class="fa-solid fa-xmark" onclick="removeEmpresa(this)"></i>
+                                </h4>
                             </div>
                             <div class="empresa-card">
-                                <h4>Nome da Empresa 2<i class="fa-solid fa-xmark" onclick="removeEmpresa(this)"></i></h4>
+                                <h4>Nome da Empresa 2<i class="fa-solid fa-xmark" onclick="removeEmpresa(this)"></i>
+                                </h4>
                             </div>
 
                         </div>
@@ -53,6 +59,14 @@
 
                     </div>
                     <button>ADICIONAR</button>
+
+
+                    </div>
+                    <ul class="options" id="options">
+                        <li data-value="1"></li>
+                        <li data-value="1">Nome da Empresa 1    <p>123456789</p></li>
+                        <li data-value="2">Nome da Empresa 2    <p>123456789</p></li>
+                      </ul>
                 </div>
 
             </div>
@@ -61,7 +75,9 @@
 
         <div class="main-container">
             <div class="main-section">
-                <div class="main-icon"><i class="fa-solid fa-bars"></i><h3>MÓDULOS</h3></div>
+                <div class="main-icon"><i class="fa-solid fa-bars"></i>
+                    <h3>MÓDULOS</h3>
+                </div>
 
                 <div class="section-content">
                     <div class="modulos-box">

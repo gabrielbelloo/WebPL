@@ -3,7 +3,15 @@ function mudaMargemBanner(){
     document.getElementById('banner').style.marginTop = alturaHeader + 'px';
 }
 
-window.onload = mudaMargemBanner;
+function mudaComprimentoOptions(){
+    var larguraSelect = document.getElementById('empresas-box').offsetWidth;
+    document.getElementById('options').style.width = larguraSelect + 'px';
+}
+
+window.onload = function() {
+    mudaMargemBanner();
+    mudaComprimentoOptions();
+};
 
 function removeEmpresa(element) {
     const card = element.closest('.empresa-card');

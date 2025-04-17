@@ -570,7 +570,7 @@ footer img {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 2px;
-    border-radius: 4px;
+    border-radius: 2px;
     transition: all 0.3s ease;
 }
 
@@ -583,7 +583,6 @@ footer img {
 
 .empresas-box{
     border: solid 1px #ccc;
-    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     padding: 1vh;
@@ -591,8 +590,28 @@ footer img {
     height: 20%;
 }
 
-.empresas-select{
+.options{
+    position: absolute;
     background-color: #ffffff;
+    border: 1px solid #ccc;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options li {
+    font-size: 1.5vh;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options li:hover {
+    background-color: #f0f0f0;
+}
+
+.options li p {
+    font-size: 1.3vh;
 }
 
 .fa-xmark{
