@@ -5,7 +5,8 @@ function mudaMargemBanner(){
 
 function mudaComprimentoOptions(){
     var larguraSelect = document.getElementById('empresas-box').offsetWidth;
-    document.getElementById('options').style.width = larguraSelect + 'px';
+    var options = document.getElementById('options');
+    options.style.width = larguraSelect + 'px';
 }
 
 window.onload = function() {
@@ -20,6 +21,17 @@ function removeEmpresa(element) {
     }
 }
 
-function openEmpresaSelect(){
+function limparEmpresa(element) {
+    const empresasContainer = document.querySelector('.empresas-container');
+    empresasContainer.innerHTML = '';
+}
 
+function openEmpresasOptions(){
+    var options = document.getElementById('options');
+        if(options.style.display === 'block'){
+            options.style.display = 'none';
+        }else{
+        options.style.display = 'block';
+        }
+        document.getElementById("fa-chevron-down").classList.toggle("girar");
 }

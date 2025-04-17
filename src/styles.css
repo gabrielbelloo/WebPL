@@ -540,9 +540,9 @@ footer img {
     align-items: center;
     padding: 10px;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 3px;
     width: 20vh;
-    height: 4vh;
+    height: 4.5vh;
     color: #ffffff;
     background-color: #302e31;
     border: none;
@@ -552,8 +552,6 @@ footer img {
 
 .main-section button:hover {
     background-color: #252324;
-    width: 20.2vh;
-    height: 4.2vh;
 }
 
 .empresas-container{
@@ -585,12 +583,14 @@ footer img {
     border: solid 1px #ccc;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1vh;
     width: 75%;
     height: 20%;
 }
 
-.options{
+#options{
+    display: none;
     position: absolute;
     background-color: #ffffff;
     border: 1px solid #ccc;
@@ -599,19 +599,44 @@ footer img {
     margin: 0;
 }
 
-.options li {
+#options .option {
     font-size: 1.5vh;
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.options li:hover {
+#options .option:hover {
     background-color: #f0f0f0;
 }
 
-.options li p {
+#options .option p {
     font-size: 1.3vh;
+}
+
+.selectActions{
+    font-size: 1.5vh;
+    display: flex;
+    background-color: #302e31;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.selectActions:hover{
+    background-color: #252324;
+}
+
+.selectActionBtn{
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
 }
 
 .fa-xmark{
@@ -622,6 +647,11 @@ footer img {
 
 .fa-chevron-down{
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.girar{
+    transform: rotate(180deg);
 }
 
 .modulos-box{
