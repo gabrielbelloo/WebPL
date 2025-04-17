@@ -32,6 +32,19 @@
 
     </header>
 
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <input type="text" id="login" placeholder="Login">
+            <input type="password" id="password" placeholder="Senha">
+            <p id="errorMessage" class="error-message"></p>
+            <button onclick="validateLogin()">Entrar</button>
+        </div>
+    </div>
+
+
+
+
     <div class="banner-container">
         <img src="https://adapcon-pro-production-microservice-file-public.s3-sa-east-1.amazonaws.com/admin/banners/banner-cabecalho-ae9c454b-186e-4fb6-bc70-2dc4f9b3ff35.png"
             alt="Banner" id="banner" class="banner">
