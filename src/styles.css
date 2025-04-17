@@ -306,6 +306,18 @@ header {
     align-items: center;
 }
 
+.header-buttons{
+    font-size: 2vh;
+    gap: 2vh;
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-user-pen, .fa-right-from-bracket {
+    cursor: pointer;
+}
+
 header a {
     color: #f3f3f3;
     text-decoration: none;
@@ -623,20 +635,30 @@ footer img {
     cursor: pointer;
 }
 
-.selectActions:hover{
+.selectActionBtn:hover{
     background-color: #252324;
 }
 
 .selectActionBtn{
     width: 100%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-left: 1px solid #999;
     border-right: 1px solid #999;
+}
+
+.selectActionBtn p{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.selectActionBtn:first-child{
+    border-left: none;
+}
+.selectActionBtn:last-child{
+    border-right: none;
 }
 
 .fa-xmark{

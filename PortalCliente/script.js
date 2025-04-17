@@ -9,10 +9,21 @@ function mudaComprimentoOptions(){
     options.style.width = larguraSelect + 'px';
 }
 
-window.onload = function() {
-    mudaMargemBanner();
-    mudaComprimentoOptions();
-};
+function editProfile(){
+    var editProfile = document.getElementById('edit-profile');
+    var profile = document.getElementById('profile');
+    if(editProfile.style.display === 'block'){
+        editProfile.style.display = 'none';
+        profile.style.display = 'block';
+    }else{
+        editProfile.style.display = 'block';
+        profile.style.display = 'none';
+    }
+}
+
+function logout(){
+    
+}
 
 function removeEmpresa(element) {
     const card = element.closest('.empresa-card');
@@ -35,3 +46,8 @@ function openEmpresasOptions(){
         }
         document.getElementById("fa-chevron-down").classList.toggle("girar");
 }
+
+window.onload = function() {
+    mudaMargemBanner();
+    mudaComprimentoOptions();
+};
