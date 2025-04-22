@@ -18,6 +18,11 @@ function editProfile() {
     }
 }
 
+function closeEditModal() {
+    var editModal = document.getElementById('editModal');
+    editModal.style.display = 'none';
+}
+
 function logout() {
 
 }

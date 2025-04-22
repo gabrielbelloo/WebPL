@@ -227,7 +227,8 @@ tr:hover td {
 }
 
 .close{
-    position: absolute;
+    position: relative;
+    width: 100%;
 
 }
 
@@ -235,8 +236,6 @@ tr:hover td {
     font-size: 1em;
     color: #111111;
     cursor: pointer;
-    width: 100%;
-
     display: block;
     text-align: right;
 }
@@ -312,7 +311,7 @@ tr:hover td {
 }
 
 .editModal-content button {
-    background-color: #0f0f0f;
+    background-color: #333;
     color: white;
     border: none;
     padding: 10px 20px;
