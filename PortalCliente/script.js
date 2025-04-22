@@ -23,10 +23,6 @@ function closeEditModal() {
     editModal.style.display = 'none';
 }
 
-function logout() {
-
-}
-
 function removeEmpresa(element) {
     const card = element.closest('.empresa-card');
     if (card) {
