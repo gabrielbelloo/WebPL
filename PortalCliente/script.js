@@ -78,9 +78,7 @@ function fetchOptions() {
         criaOption.classList.add('option'); // Adiciona a classe 'option' ao elemento
         criaOption.innerHTML = `
         ${id} - ${nome} <p>${cnpj}</p> <p>${cidade} - ${estado}</p>`; // Define o conteúdo HTML da opção
-
     });
-
 
 
 }

@@ -325,6 +325,17 @@ tr:hover td {
     background-color: #1a1a1a;
 }
 
+.changePsswd button {
+    background-color: #f1f1f1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 .editTitle{
     display: flex;
     gap: 1vh;
